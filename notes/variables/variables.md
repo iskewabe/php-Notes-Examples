@@ -15,10 +15,13 @@
 		<p>PHP also have another way to assign values to variables: assign by reference. This means that the new variable simply references (becomes an alias or points to) the original variable. Change to the new variable affect the original, and vice versa. To assign by reference, simply prepend an ampersand to the beginning of the variable which is being assigned(the source variable). Only named variables may be assigned by reference.</p>
 		<p>It is not necessary to initalize variables in PHP however it is a very good practice. Uninitialized variables have a default value of their types depending on the context in which they are used:
 <ul>
-<li>booleans default to false<li>
+<li>booleans default to false</li>
 <li>integers and floats default to zero</li>
 <li>strings (e.g. used in echo) are set as an empty string</li>
 <li>arrays become to an empty array.</li>
+<li>unset and unreferenced (no use context) variables output null</li>
+<li>objects create new stdClass object</li>
 </ul>
+Relying on the default value of an uninitialized variable is problematic in the case of including one file into another which uses the same variable name. isset() language construct can be used to detect if a variable has been already initalized.
 </p>
 	</body>
