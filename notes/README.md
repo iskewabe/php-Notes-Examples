@@ -3,6 +3,6 @@
 <body>
 <h1>Language Basics</h1>
 <ul>
-<li><a href="variables/variables.html">Variables</a></li>
+<li><a href="variables/variables.md">Variables</a></li>
 </ul>
 </body>
