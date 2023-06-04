@@ -1,0 +1,18 @@
+Null
+
+Has only one value:
+    - null (case-insensitive)
+
+=> Undefined, and unset() variables will resolve to the value null.
+
+* Undefined variable is a variable without a value, since PHP is a dynamically typed language. In other words, it's a memory location with a default null value.
+
+* unset() is a function that removes a value from a variable. This method will replace the value that existed in the memory with the null value.
+
+<?php
+$var = null;
+?>
+
+Methods that exist for use
+is_null(): check the variable or expression if it has the value null and returns a boolean true or false.
+unset()
