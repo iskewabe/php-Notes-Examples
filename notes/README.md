@@ -3,6 +3,6 @@
 <body>
 <h1>Language Basics</h1>
 <ul>
-<li>Variables</li>
+<li>[a relative link](variables/variables.md)</li>
 </ul>
 </body>
